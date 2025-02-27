@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			// 情况1：操作数为字符串时，执行字符串连接
+			let str = "Hello";
+			str += 25; // 等价于 str = str + 25
+			console.log(str); // 输出 "Hello25"（字符串拼接）
+			
+			// 情况2：操作数为数值时，执行数值相加
+			let num = 25;
+			num += 5; // 等价于 num = num + 5
+			console.log(num); // 输出 30（数值加法）
+			
+			// 对比：其他运算符（如 -=）始终强制转换为数值
+			let mixed = "100";
+			mixed -= 20; // 等价于 mixed = Number("100") - 20
+			console.log(mixed); // 输出 80（强制数值运算）
+		</script>
+	</body>
+</html>
